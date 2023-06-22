@@ -1,0 +1,11 @@
+version: 1.2
+workflows:
+   - name: "pipseeker"
+     subclass: WDL
+     primaryDescriptorPath: /pipseeker.wdl
+     filters: 
+        branches: 
+          - main
+        tags: 
+          - /.*/
+
