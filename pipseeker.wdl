@@ -64,7 +64,7 @@ task run_pipseeker {
 
   runtime {
     container: "public.ecr.aws/w3e1n2j6/fluent-pipseeker:latest"
-    cpu: 8
+    cpu: 32
     memory: memory_size + "G"
     disks: "local-disk ~{disk_size} HDD"
     }    
